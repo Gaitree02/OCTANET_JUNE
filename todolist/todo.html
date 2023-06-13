@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TO-DO LIST</title>
+    <link rel="stylesheet" href="todo.css">
+    <link rel="shortcut icon" href="\project\project2\Gayatri.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <!-- <script src="script.js"></script> -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<body>
+  
+    <div class="main">
+  <h1> TO-DO LIST </h1>
+   <div class="input">
+    <input type="text" id="in"  placeholder="Write something here....">
+    <button onclick=Add()>Add</button>
+     </div>
+     <div class="text">
+
+     </div>
+    </div>
+  <script>
+    let input=document.getElementById("in")
+let text=document.querySelector(".text")
+ function Add()
+ {
+    if(input.value=="")
+    {
+    alert("Please Enter Task ") 
+  }
+    else {
+ let newElement=document.createElement("ul");
+ newElement.innerHTML =`${input.value} <ion-icon name="trash"></ion-icon>`;
+ text.appendChild(newElement);
+ input.value="";
+ newElement.querySelector("ion-icon").addEventListener("click",remove);
+ function remove()
+ {
+  newElement.remove()
+ }
+}
+  }
+  </script>
+</body>
+</html>
