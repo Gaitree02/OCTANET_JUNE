@@ -1,0 +1,481 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkdin Clone Website</title>
+    <link rel="stylesheet" href="clone.css">
+    <link rel="shortcut icon" href="\project\project2\Gayatri.png" type="image/x-icon">
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+  <!----------------------------------nav starts----------------------------------------->
+  <nav class="navbar">
+    <div class="nav-left">
+        <a href="index.html" class="logo"><img src="images/logo.png" alt="logo" ></a>
+    <div class="search-box">
+      <img src="images/search.png" >
+      <input type="text" placeholder="Search Here">
+    </div>
+    
+      </div>
+    <div class="nav-center">
+      <ul> 
+        <li><a href="#" class="active"><img src="images/home.png" alt=""><span>Home</span></a></li>
+        <li><a href="#"><img src="images/network.png" alt=""><span>My Network</span></a></li>
+        <li><a href="#"><img src="images/jobs.png" alt=""><span>Jobs</span></a></li>
+        <li><a href="#"><img src="images/message.png" alt=""><span>Messaging</span></a></li>
+        <li><a href="#"><img src="images/notification.png" alt=""><span>Notifications</span></a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <div id="online">
+      <img src="images/gayu.png" alt="" class="nav-profile-img" onclick="toggleMenu()">
+    </div>
+    </div>
+<!-- 
+----------------------profile drop down-menu----------------------- -->
+<div class="profile-menu-wrap" id="menu">
+  <div class="menu">
+    <div class="user-info">
+      <img src="images/gayu.png" >
+      <div> <h3>Gaitree Kumari</h3>
+      <a href="profile.html"> See your profile</a></div>
+    </div>
+    <hr>
+  <a href="#" class="menu-link">
+    <img src="images/feedback.png" alt=""> <p>Give Feedback </p>
+  </a>
+
+  <a href="#" class="menu-link">
+    <img src="images/setting.png">
+    <p> Settings and privacy</p>
+  </a>
+  <a href="#" class="menu-link">
+    <img src="images/help.png">
+    <p> Help and support</p>
+</a>
+<a href="#" class="menu-link">
+  <img src="images/display.png">
+  <p> Display and accesibilityr</p>
+</a>
+
+<a href="#" class="menu-link">
+  <img src="images/logout.png">
+  <p> Logout</p>
+</a>
+</div>
+  </div>
+</nav>
+
+  <!-- --------------------------nav close----------------------- -->
+
+ <div class="container">
+  <!-- -----------------left sidebar--------------------------------- -->
+  <div class="left-side">
+    <div class="sidebar-profile-box">
+      <img src="images/nsu.jpg" width="100%">
+      <div class="profile-info">
+        <img src="images/gayu.png" height="70px"  width="90px">
+        <h1>Gaitree Kumari</h1>
+
+        <h3> BCA Student at NSU,Jamshedpur</h3>
+        <ul>
+          <li>Your profile views<span>100</span></li>
+          <li>Your post views<span>250</span></li>
+          <li>Your Connections views<span>310</span></li>
+          
+        </ul>
+      </div>
+      <div class="profile-link">
+       <a href="#"> <img src="images/items.png" >My items</a>
+        <a href="#"><img src="images/premium.png" alt="">Try Premium</a>
+      </div>
+    </div>
+    <div class="side-activity">
+      <h3>Recent</h3>
+     <a href=""><img src="images/recent.png" >Web Development</a>
+     <a href=""><img src="images/recent.png" >UI/UX</a>
+     <a href=""><img src="images/recent.png" >Online Learning</a>
+      <a href=""><img src="images/recent.png" >Group Learning</a>
+      <a href=""><img src="images/recent.png" >Code Better</a>
+      <a href=""><img src="images/recent.png" >Graphic Design</a>
+        <h3>GROUPS</h3>
+        <a href="#"><img src="images/group.png" alt="">Web Design Group</a>
+        <a href="#"><img src="images/group.png" alt="">HTML & CSS Learners</a>
+        <a href="#"><img src="images/group.png" alt="">Python & Java Group</a>
+       <a href="#"><img src="images/group.png" alt="">Graphic Designing </a>
+<h3> HASHTAG</h3>
+<a href="#"><img src="images/hashtag.png" alt="">Web Development </a>
+<a href="#"><img src="images/hashtag.png" alt="">UserInterface </a>
+<a href="#"><img src="images/hashtag.png" alt="">onlineLearning </a>
+<a href="#"><img src="images/hashtag.png" alt="">intern </a>
+<a href="#"><img src="images/hashtag.png" alt="">Octanet</a>
+  <div class="discover-more-link">
+    <a href="#">Discover More</a>
+  </div>
+    </div>
+  </div>
+  <!-- --------------------main content------------------------------ -->
+  <div class="main-side">
+    <div class="create-post">
+      <div class="create-post-input">
+        <img src="images/gayu.png" >
+        <textarea  rows="2"   placeholder="Write a post"></textarea>
+      </div>
+      <div class="create-post-links">
+        
+          <li><img src="images/photo.png" alt="">Photo</li>
+          <li><img src="images/video.png" alt="">Video</li>
+          <li> <img src="images/event.png" alt="">Event</li>
+         <li>Post</li>
+        </div>
+    </div>
+    <div class="sort-by">
+      <hr><p>Sort by:<span>top <img src="images/down-arrow.png" alt=""></span></p>
+    </div>
+
+
+    <!-- -----------------post 1 by user 1--------------------------------------- -->
+    <div class="post">
+    <div class="post-author">
+      <img src="images/ravi.png">
+    <div>
+    <h1>Ravindra Pradhan</h1>
+    <small>Associate Consultant at EY| SAP Basis</small>
+    <small>2 hours ago</small>
+  </div>
+</div>
+
+ <p>
+  The Success of every websites depends on Search Engine Optimization and digital marketing strategy. If you are on first page of major Search engines then you are ahead among your competitors.
+</p>
+<img src="images/post-image-1.png" width="100%">
+
+<div class="post-status">
+  <div>
+  <img src="images/thumbsup.png" >
+  <img src="images/love.png" >
+  <img src="images/clap.png">
+  <span class="likeby">Gaitree Kumari and 75 others</span>
+</div>
+  <div>25comments and 12 shares</div>
+</div>
+<div class="post-activity">
+  <div>
+  <img src="images/ravi.png"  class="post-activity-user-icon">
+  <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+</div>
+<div class="post-links">
+  <img src="images/like.png" >
+  <span>Like</span>
+</div>
+<div class="post-links">
+  <img src="images/comment.png" >
+  <span>comment</span>
+</div>
+<div class="post-links">
+  <img src="images/share.png" >
+  <span>share</span>
+</div>
+<div class="post-links">
+  <img src="images/send.png" >
+  <span>send</span>
+</div>
+</div> 
+</div>
+
+<!-- ---------------post 2---------------- -->
+
+<div class="post">
+
+<div class="post-author">
+  <img src="images/user-2.png">
+<div>
+<h1>Galileo Nardo</h1>
+<small>CEO at Microsoft</small>
+<small>3hours ago</small>
+</div>
+</div>
+<p>
+  The Success of every websites depends on Search Engine Optimization and digital marketing strategy. If you are on first page of major Search engines then you are ahead among your competitors.
+</p>
+<img src="images/post-image-2.png" width="100%">
+
+<div class="post-status">
+  <div>
+  <img src="images/thumbsup.png" >
+  <img src="images/love.png" >
+  <img src="images/clap.png">
+  <span class="likeby">Harndo Hussian  and 45 others</span>
+</div>
+  <div>30comments and 45 shares</div>
+</div>
+ <div class="post-activity">
+  <div>
+  <img src="images/user-2.png"  class="post-activity-user-icon">
+  <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+</div>
+<div class="post-links">
+  <img src="images/like.png" >
+  <span>Like</span>
+</div>
+<div class="post-links">
+  <img src="images/comment.png" >
+  <span>comment</span>
+</div>
+<div class="post-links">
+  <img src="images/share.png" >
+  <span>share</span>
+</div> 
+</div>
+</div>
+<!-- ------------------------------post 3---------------------- -->
+
+
+<div class="post">
+
+<div class="post-author">
+  <img src="images/akku.png">
+<div>
+<h1>Akansha kuamri</h1>
+<small>Student at Netaji Subhas University Jamshedpur </small>
+<small>1 hours ago</small>
+</div>
+</div>
+<p>
+  The first thing you learn when you're blogging is that people are one click away from leaving you.
+</p>
+<img src="images/blog.jpg" width="100%">
+
+<div class="post-status">
+  <div>
+  <img src="images/thumbsup.png" >
+  <img src="images/love.png" >
+  <img src="images/clap.png">
+  <span class="likeby">Gaitree Kumari  and 35 others</span>
+</div>
+  <div>10 comments </div>
+</div>
+ <div class="post-activity">
+  <div>
+  <img src="images/akku.png"  class="post-activity-user-icon">
+  <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+</div>
+<div class="post-links">
+  <img src="images/like.png" >
+  <span>Like</span>
+</div>
+<div class="post-links">
+  <img src="images/comment.png" >
+  <span>comment</span>
+</div>
+<div class="post-links">
+  <img src="images/share.png" >
+  <span>share</span>
+</div> 
+</div>
+</div>
+
+<!-- --------------------post 4---------------------------------- -->
+<div class="post">
+<div class="post-author">
+  <img src="images/anjana.png">
+<div>
+<h1>Anjana Sardar</h1>
+<small>UPSC Aspirant </small>
+<small>2hours ago</small>
+</div>
+</div>
+<p>
+  </p>
+<img src="images/jams.jpg" width="100%">
+
+<div class="post-status">
+  <div>
+  <img src="images/thumbsup.png" >
+  <img src="images/love.png" >
+  <img src="images/clap.png">
+  <span class="likeby">Guru and 25 others</span>
+</div>
+  <div>15 comments</div>
+</div>
+ <div class="post-activity">
+  <div>
+  <img src="images/anjana.png"  class="post-activity-user-icon">
+  <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+</div>
+<div class="post-links">
+  <img src="images/like.png" >
+  <span>Like</span>
+</div>
+<div class="post-links">
+  <img src="images/comment.png" >
+  <span>comment</span>
+</div>
+<div class="post-links">
+  <img src="images/share.png" >
+  <span>share</span>
+</div> 
+</div>
+</div>
+
+<!-- ------------------------post 5---------------------------- -->
+<div class="post">
+<div class="post-author">
+  <img src="images/priya.png">
+<div>
+<h1>Priya Kumari</h1>
+<small>Student at  Jamshedpur Women's College</small>
+<small>3hours ago</small>
+</div>
+</div>
+<p>
+  You are never old to set new Goals or dream another dreams.
+</p>
+<img src="images/career.jpg" width="100%">
+
+<div class="post-status">
+  <div>
+  <img src="images/thumbsup.png" >
+  <img src="images/love.png" >
+  <img src="images/clap.png">
+  <span class="likeby">Nikhil Sharma and 12 others<span>
+</div>
+  <div>4comments</div>
+</div>
+ <div class="post-activity">
+  <div>
+  <img src="images/priya.png"  class="post-activity-user-icon">
+  <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+</div>
+<div class="post-links">
+  <img src="images/like.png" >
+  <span>Like</span>
+</div>
+<div class="post-links">
+  <img src="images/comment.png" >
+  <span>comment</span>
+</div>
+<div class="post-links">
+  <img src="images/share.png" >
+  <span>share</span>
+</div> 
+</div>
+</div>
+<!-- 
+------------------------post 6-------------------------- -->
+
+<div class="post">
+<div class="post-author">
+  <img src="images/gayu.png">
+<div>
+<h1>Gaitree Kumari </h1>
+<small> BCA Student at NSU Jamshedpur</small>
+<small>3hours ago</small>
+</div>
+</div>
+<p>
+ created a tribute page.
+
+</p>
+<img src="images/tribute_page.png" width="100%">
+
+<div class="post-status">
+  <div>
+  <img src="images/thumbsup.png" >
+  <img src="images/love.png" >
+  <img src="images/clap.png">
+  <span class="likeby">Shaurya Kumar  and 15 others</span>
+</div>
+  <div>5 comments</div>
+</div>
+ <div class="post-activity">
+  <div>
+  <img src="images/gayu.png"  class="post-activity-user-icon">
+  <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+</div>
+<div class="post-links">
+  <img src="images/like.png" >
+  <span>Like</span>
+</div>
+<div class="post-links">
+  <img src="images/comment.png" >
+  <span>comment</span>
+</div>
+<div class="post-links">
+  <img src="images/share.png" >
+  <span>share</span>
+</div> 
+</div>
+
+</div>
+
+</div>
+  <!-- -----------------------right side----------------------------- -->
+  <div class="right-side">
+    <div class="side-news">
+      <img src="images/more.png" class="info-icon">
+      <h1>Trending News</h1>
+      <a href="#">High Demand for skilled manpower</a>
+      <span>1d ago &middot;10,922 readers</span>
+      
+      <a href="#">Career growing horizontally too</a>
+      <span>19h ago &middot;1,922 readers</span>
+      
+      <a href="#">Opporunity to work with highly skilled at IBM</a>
+      <span>14h ago &middot;20,002 readers</span>
+       
+      <a href="#">More Hiring= higher confident</a>
+        <span>2d ago &middot;17,122 readers</span>
+         
+        
+        <a href="#">Mukesh Ambani is the richest man in India </a>
+          <span>6h ago &middot;6,922 readers</span>
+
+          <a href="#" class="read-more">READ MORE </a>
+    </div>
+   <div class="side-ads">
+    <small>Ad &middot;&middot;&middot;</small>
+    <p>Gaitree,unlock your full potential with LinkedIn Premium</p>
+    <div>
+      <img src="images/gayu.png" height="45px" width="55px">
+    <img src="images/mi-logo.png"  height="45px" width="55px">
+  </div>
+   
+<b> Brand and Demand in Xiaomi</b>
+<a href="#" class="learn-more"> Learn more</a>
+</div>
+<div class="useful-links">
+  <a href="#" >About</a>
+  <a href="#" > Accessiblity</a>
+  <a href="#" >Help center</a>
+  <a href="#" >Privacy Policy</a>
+  <a href="#" >Advertising</a>
+  <a href="#" >Get the app</a>
+  <a href="#" >More</a>
+  <div class="copyright-msg">
+    <img src="images/logo.png" height="24px" >
+    <p> Linkedup &#169;2023,All right reserved</p>
+  </div>
+</div>
+  </div>
+
+
+
+</div>
+
+
+<!--  script -->
+<script>
+let menu= document.getElementById("menu");
+function toggleMenu()
+{
+ menu.classList.toggle("open-menu");
+}
+</script>
+</body>
+</html>
